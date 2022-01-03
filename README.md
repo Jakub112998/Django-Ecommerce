@@ -2,7 +2,10 @@
 
 Ecommerce site with ELASTICSEARCH capability
 
-docker-compose up
-python manage.py load-fixtures
+- python manage.py makemigations
+- python manage.py migrate
+- docker-compose up -d
+- python manage.py load-fixtures
+- python manage.py runserver
 
 localhost:8000/search/<pass_name_here>
